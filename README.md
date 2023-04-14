@@ -10,7 +10,7 @@ Multiply sound frequencies in .wav files by a custom coefficient (using https://
 ##  
 You can try different FFT sizes to increase result quality, but it **must** be power of 2.  
 Default FFT size is 2048, because it is close to 50ms chunk on 44100 Hz sample rate (2205).  
-FFT size = 4096 often shows better results, but dj_fft algorithms does not always works correctly on audio data  
+FFT size = 4096 often shows better results, but dj_fft algorithms do not always work correctly on audio data  
 vectors greater than 2048 elements (result differs from original, doing FFT forward and FFT backward after),  
 causing volume loss.  
 Program supports different .wav file types (sample rate, sample size, channel count, byte order, signed/unsigned).
